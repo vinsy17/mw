@@ -1,0 +1,61 @@
+﻿    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/colorbox")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">
+                        @*@Html.ActionLink("your logo here", "Index", "Home")*@
+                        @*<img class="logo_thumb" src="https://www.freelogoservices.com/api/main/render/1j+ojlxKOMkX9WyteRe4hGf017...euktNlQXbi2c...ZzhA9gptlSI7xqs...+Otlf1oN4EdO3U1ON5MwiSByWIERhR9s+A==">*@
+                        <img height="60" width="100" class="logo_thumb" src="~/Content/Images/logo.png">
+                    </p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            function OverViewPopup() {
+                $.colorbox({ href: '/Home/_RequestDemo?t=' + Math.random(), height: 540, width: 750, overlayClose: false, escKey: false, onLoad: function () { }, onComplete: function () { $('#cboxClose').show() } });
+            }
+
+</script>
+        @*@Scripts.Render("~/bundles/jquery")*@
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

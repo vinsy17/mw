@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@*@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>
+}*@
+@Scripts.Render("~/bundles/jcarousel")
+@Styles.Render("~/Content/jcarouselcss")
+
+<h3>We suggest the following:</h3>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel" data-jcarousel="true">
+        <ul>
+            <li>
+                @*<h5>Migos, 'Culture</h5>*@
+                <img width="600" height="400" class="" src="/Content/Images/migos-culture-album-cover-2017-billboard-1240.jpg" />
+                @*<a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>*@
+            </li>
+
+            <li>
+                @*<h5>Ed Sheeran, 'Divide'</h5>*@
+                <img width="600" height="400" class="" src="/Content/Images/ed-sheeran-divide-album-cover-2017-billboard-1240.jpg" />
+
+                @*<a href="javascript:void(0)" class="call mLeft20" onclick="OverViewPopup();">
+                                <img src="/Content/images/demo-icon.png" class="mRight9" alt="TruckLogics">Request a Live Demo
+                            </a>*@
+            </li>
+
+            <li>
+                @*<h5>Spoon, 'Hot Thoughts'</h5>*@
+                <img width="600" height="400" class="" src="/Content/Images/spoon-hot-thoughts-album-cover-2017-billboard-1240.jpg" />
+
+                @*<a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>*@
+            </li>
+
+            <li>
+                @*<h5>Big Sean, 'I Decided'</h5>*@
+                <img width="600" height="400" class="" src="/Content/Images/big-sean-i-decided-album-2017-billboard-1240.jpg" />
+
+                @*<a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>*@
+            </li>
+        </ul>
+    </div>
+    <p class="photo-credits">
+        Photos by <a href="http://www.billboard.com">Billboard.com</a>
+    </p>
+    <a class="jcarousel-control-prev inactive" href="#" data-jcarouselcontrol="true">‹</a>
+    <a class="jcarousel-control-next" href="#" data-jcarouselcontrol="true">›</a>
+    <p class="jcarousel-pagination" data-jcarouselpagination="true">
+        <a class="active" href="#1">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a>
+    </p>
+</div>
+@*<script type="text/javascript" src="/Content/Scripts/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="/Content/Scripts/jquery.jcarousel.js"></script>*@
+<script type="text/javascript">
+    $(function () {
+        $('.jcarousel').jcarousel({
+            // Configuration goes here
+            //animation: {
+            //    duration: 800,
+            //    easing: 'linear',
+            //    complete: function () {
+            //    }
+            //}
+        });
+    });
+</script>

@@ -1,0 +1,24 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/slnx.sqlite-journal
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/mw/v15/.suo
+/api.mymusicworld.com/bin
+/api.mymusicworld.com/obj
+/api.mymusicworld.com.Tests/bin/Debug
+/api.mymusicworld.com.Tests/obj
+/MMW.Core/bin/Debug
+/MMW.Core/obj
+/MMW.Data/bin/Debug
+/MMW.Data/obj
+/MMW.Resources/obj
+/MMW.Services/bin/Debug
+/MMW.Services/obj
+/MMW.Utilities/bin/Debug
+/MMW.Utilities/obj
+/secure.mymusicworld.com.Tests/obj/Debug
+/secure.mymusicworld.com/obj
+/secure.mymusicworld.com/bin
