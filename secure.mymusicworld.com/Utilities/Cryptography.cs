@@ -6,7 +6,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace MvcApplication1.Utilities
+namespace secure.mymusicworld.com.Utilities
 {
     //public partial class Cryptography
     //{

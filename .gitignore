@@ -24,3 +24,5 @@
 /secure.mymusicworld.com/bin
 /.vs/MyMusicWorld/v15
 /.vs/VSWorkspaceState.json
+/packages
+/.vs
